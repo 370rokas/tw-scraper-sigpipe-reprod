@@ -3,8 +3,6 @@ import threading, time
 
 EXCHANGE_SYMBOLS = ["FOREXCOM:XAUUSD", "FOREXCOM:EURUSD", "FOREXCOM:GBPJPY"]
 
-cache = {}
-
 def process_packet(packet):
     print("Processing packet:", packet.get('m'))
     # Simulate the processing of the packet
